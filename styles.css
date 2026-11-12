@@ -162,6 +162,9 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .co-body li{padding:.7rem 0;border-top:1px solid var(--line);font-weight:500}
 .co-body li:last-child{border-bottom:1px solid var(--line)}
 .co-body .btn{margin-top:1.5rem}
+.lms-brand{display:flex;width:min(100%,310px);aspect-ratio:2.2/1;align-items:center;justify-content:center;overflow:hidden;border-radius:18px;margin:1.25rem 0;background:#ffe0c4}
+.lms-brand img{width:100%;height:100%;object-fit:cover}
+.lms-brand:focus-visible{outline-color:var(--sand-deep)}
 
 .split{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:center}
 .split .media{grid-column:span 6;border-radius:32px;aspect-ratio:1}
