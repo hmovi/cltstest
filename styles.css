@@ -165,6 +165,28 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .lms-brand{display:flex;width:min(100%,310px);aspect-ratio:2.2/1;align-items:center;justify-content:center;overflow:hidden;border-radius:18px;margin:1.25rem 0;background:#ffe0c4}
 .lms-brand img{width:100%;height:100%;object-fit:cover}
 .lms-brand:focus-visible{outline-color:var(--sand-deep)}
+.pricing-main{padding-bottom:clamp(2rem,6vw,5rem)}
+.pricing-head{padding-bottom:clamp(1.5rem,3vw,2.5rem)}
+.pricing-head .tag{position:relative;z-index:1}
+.pricing-head h1{max-width:10ch}
+.pricing-head .lede{max-width:38em}
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:stretch}
+.price-card{display:flex;flex-direction:column;align-items:flex-start;gap:1rem;padding:clamp(1.5rem,3vw,2.25rem);border:1px solid var(--line);border-radius:28px;background:#fff}
+.price-card-featured{background:var(--mist);border-color:transparent}
+.price-index{color:var(--sand-deep);font-size:.92rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.price-card h2{font-size:clamp(1.6rem,2.5vw,2.1rem);line-height:1.1;min-height:2.2em}
+.price{font-size:clamp(2.5rem,4.4vw,3.75rem);font-weight:700;letter-spacing:-.055em;line-height:1}
+.price span{display:block;margin-bottom:.35rem;font-size:.95rem;font-weight:500;letter-spacing:0;color:var(--sand-deep)}
+.price-card>p:not(.price){min-height:4.8em}
+.price-card ul{width:100%;margin:.2rem 0 .5rem}
+.price-card li{padding:.7rem 0;border-top:1px solid var(--line);font-size:1rem}
+.price-card li:last-child{border-bottom:1px solid var(--line)}
+.price-card .btn{margin-top:auto;min-height:48px}
+.pricing-note{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.pricing-note p{max-width:38em}
+.pricing-note a{font-weight:600;text-decoration-thickness:1px;text-underline-offset:4px;white-space:nowrap}
+@media(max-width:900px){.price-grid{grid-template-columns:1fr 1fr}.price-card:last-child{grid-column:1/-1}.price-card h2{min-height:0}.price-card>p:not(.price){min-height:0}}
+@media(max-width:560px){.price-grid{grid-template-columns:1fr}.price-card:last-child{grid-column:auto}.price-card{border-radius:22px}.pricing-note{align-items:flex-start;flex-direction:column}.pricing-note a{white-space:normal}}
 
 .split{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:center}
 .split .media{grid-column:span 6;border-radius:32px;aspect-ratio:1}
