@@ -137,6 +137,12 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .split .media{grid-column:span 6;border-radius:32px;aspect-ratio:1}
 .split .copy{grid-column:7/-1}
 .split .copy p{margin-top:1.25rem}
+.founder .media{aspect-ratio:4/3;border-radius:32px}
+.founder .media img{object-position:center 28%}
+.founder-quote{margin:1.5rem 0 0;border-left:3px solid var(--sand-deep);padding-left:1.25rem}
+.founder-quote p{font-size:clamp(1.05rem,1.5vw,1.2rem);line-height:1.7;color:var(--muted)}
+.founder-quote footer{margin-top:1.5rem;font-weight:600}
+.founder-quote footer span{display:block;font-size:.95rem;font-weight:400;color:var(--muted)}
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
 .values .tile{min-height:240px}
 .v1{background:var(--mist)}
@@ -247,6 +253,9 @@ textarea{min-height:150px;resize:vertical}
 .page-head h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:12em}
 .split-rev .copy{grid-column:1/span 6;grid-row:1}
 .split-rev .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3}
+.expert-network .copy p{margin-top:1.25rem}
+.expert-network .actions{margin-top:1.5rem}
+.expert-network .media{border-radius:32px}
 .split-wide .copy{grid-column:1/span 8}
 @media (max-width:900px){
   .split-rev .copy,.split-rev .media,.split-wide .copy{grid-column:1/-1;grid-row:auto}

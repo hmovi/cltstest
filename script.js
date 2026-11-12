@@ -38,6 +38,9 @@ if (tabs.length) select(0);
 // To send through a service instead (Formspree, Vercel Functions, etc.), replace this handler.
 const form = document.querySelector('#contact-form');
 if (form) {
+  const interest = new URLSearchParams(window.location.search).get('interest');
+  if (interest === 'expert-network') form.elements.interest.value = interest;
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const d = new FormData(form);
