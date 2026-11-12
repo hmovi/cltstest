@@ -134,6 +134,10 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 
 /* ---------- Inner pages ---------- */
 .page-head{position:relative;padding-top:clamp(3rem,8vw,6rem);padding-bottom:clamp(2rem,5vw,4rem)}
+.expertise-main{display:flex;flex-direction:column;gap:clamp(3rem,6vw,5rem)}
+.expertise-main>.page-head{padding-bottom:0}
+.expertise-main>.section{padding-block:0}
+.expert-checks{margin-top:1.5rem}
 .page-head .hero-square{width:clamp(140px,20vw,280px);top:8%}
 .page-head h1{position:relative;z-index:1;font-size:clamp(2.8rem,8vw,6.5rem);max-width:11em}
 .page-head .lede{position:relative;z-index:1;margin-top:1.5rem}
@@ -267,12 +271,12 @@ textarea{min-height:150px;resize:vertical}
 @media (max-width:560px){.steps{grid-template-columns:1fr}}
 .hero-text h1{font-size:clamp(2.7rem,7vw,6rem);max-width:12em}
 .page-head h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:12em}
-.split-rev .copy{grid-column:1/span 6;grid-row:1}
-.split-rev .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3}
+.split-rev .copy{grid-column:7/-1;grid-row:1}
+.split-rev .media{grid-column:1/span 6;grid-row:1;aspect-ratio:4/3}
 .expert-network .copy{grid-column:1/span 6;grid-row:1;max-width:36em}
 .expert-network .copy p{margin-top:1.25rem}
 .expert-network .actions{margin-top:1.5rem}
-.expert-network .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3;border-radius:32px;align-self:center}
+.expert-network .media{grid-column:7/-1;grid-row:1;aspect-ratio:4/3;border-radius:32px;align-self:center}
 .split-wide .copy{grid-column:1/span 8}
 @media (max-width:900px){
   .split-rev .copy,.split-rev .media,.split-wide .copy{grid-column:1/-1;grid-row:auto}
