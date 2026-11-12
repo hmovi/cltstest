@@ -248,13 +248,11 @@ textarea{min-height:150px;resize:vertical}
 .pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
 .pills span{background:var(--mist);padding:.5em 1.15em;border-radius:999px;font-weight:500}
 .cta .pills span{background:rgba(254,253,251,.12);color:var(--paper)}
-.group-badge{display:inline-flex;align-items:center;padding:.25rem .55rem;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--line);text-decoration:none;opacity:1;transition:background .2s}
-.group-badge:hover{background:var(--mist)}
-.soliton-logo-crop{position:relative;display:block;width:clamp(130px,17vw,176px);aspect-ratio:6.8;overflow:hidden;flex:0 0 auto}
-.soliton-logo-crop img{position:absolute;top:-66%;left:-7%;display:block;width:114%;max-width:none;height:auto}
 .legal{align-items:center}
-.legal .soliton-logo-crop{width:clamp(120px,15vw,154px)}
 .legal .legal-note{opacity:.75}
+.company-affiliation{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.5rem;margin:0;color:var(--ink);font-size:.95rem;font-weight:500;line-height:1.35;opacity:1}
+.company-affiliation a{display:inline-flex;align-items:center;flex:0 0 auto}
+.company-affiliation img{display:block;width:clamp(130px,15vw,176px);height:auto}
 .checks li{padding:.7rem 0;border-top:1px solid var(--line);font-weight:500}
 .checks li:last-child{border-bottom:1px solid var(--line)}
 .sec-head{max-width:30em}
