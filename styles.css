@@ -48,7 +48,7 @@ ul{list-style:none}
 
 /* ---------- Type ---------- */
 h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1.02}
-h1{font-size:clamp(3rem,9vw,7.5rem)}
+h1{font-size:clamp(2.4rem,6.2vw,5.25rem)}
 h2{font-size:clamp(2.2rem,5vw,4rem)}
 h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .lede{font-size:clamp(1.15rem,2vw,1.5rem);max-width:34em;line-height:1.45;font-weight:400}
@@ -98,6 +98,16 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .panel .media{aspect-ratio:16/10}
 .panel-body{padding:1.75rem 2rem 2.25rem}
 .panel-body p{margin:.75rem 0 1.5rem;max-width:32em}
+
+/* ---------- Global institutions ---------- */
+.global-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;overflow:hidden;border-radius:36px;background:var(--mist);margin-bottom:clamp(4rem,10vw,8rem)}
+.global-image{display:block;min-height:100%;overflow:hidden}
+.global-image img{width:100%;height:100%;min-height:420px;object-fit:cover;transition:transform .6s var(--ease)}
+.global-image:hover img{transform:scale(1.025)}
+.global-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(2rem,5vw,4.5rem)}
+.global-copy h2{font-size:clamp(2rem,4vw,3.5rem);max-width:12em}
+.global-copy p{margin:1.25rem 0 1.75rem;max-width:36em}
+@media (max-width:900px){.global-section{grid-template-columns:1fr}.global-image img{min-height:0;aspect-ratio:16/10}}
 
 /* ---------- Bento ---------- */
 .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-top:3rem}
@@ -238,13 +248,11 @@ textarea{min-height:150px;resize:vertical}
 .pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
 .pills span{background:var(--mist);padding:.5em 1.15em;border-radius:999px;font-weight:500}
 .cta .pills span{background:rgba(254,253,251,.12);color:var(--paper)}
-.group-badge{display:inline-flex;align-items:center;padding:.25rem .55rem;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--line);text-decoration:none;opacity:1;transition:background .2s}
-.group-badge:hover{background:var(--mist)}
-.soliton-logo-crop{position:relative;display:block;width:clamp(130px,17vw,176px);aspect-ratio:6.8;overflow:hidden;flex:0 0 auto}
-.soliton-logo-crop img{position:absolute;top:-66%;left:-7%;display:block;width:114%;max-width:none;height:auto}
 .legal{align-items:center}
-.legal .soliton-logo-crop{width:clamp(120px,15vw,154px)}
 .legal .legal-note{opacity:.75}
+.company-affiliation{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.5rem;margin:0;color:var(--ink);font-size:.95rem;font-weight:500;line-height:1.35;opacity:1}
+.company-affiliation a{display:inline-flex;align-items:center;flex:0 0 auto}
+.company-affiliation img{display:block;width:clamp(130px,15vw,176px);height:auto}
 .checks li{padding:.7rem 0;border-top:1px solid var(--line);font-weight:500}
 .checks li:last-child{border-bottom:1px solid var(--line)}
 .sec-head{max-width:30em}
@@ -256,10 +264,12 @@ textarea{min-height:150px;resize:vertical}
 .page-head h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:12em}
 .split-rev .copy{grid-column:1/span 6;grid-row:1}
 .split-rev .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3}
+.expert-network .copy{grid-column:1/span 6;grid-row:1;max-width:36em}
 .expert-network .copy p{margin-top:1.25rem}
 .expert-network .actions{margin-top:1.5rem}
-.expert-network .media{border-radius:32px}
+.expert-network .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3;border-radius:32px;align-self:center}
 .split-wide .copy{grid-column:1/span 8}
 @media (max-width:900px){
   .split-rev .copy,.split-rev .media,.split-wide .copy{grid-column:1/-1;grid-row:auto}
+  .expert-network .copy,.expert-network .media{grid-column:1/-1;grid-row:auto}
 }
