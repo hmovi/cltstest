@@ -138,6 +138,15 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .expertise-main>.page-head{padding-bottom:0}
 .expertise-main>.section{padding-block:0}
 .expert-checks{margin-top:1.5rem}
+.about-main{display:flex;flex-direction:column;gap:clamp(3rem,6vw,5rem)}
+.about-main>.page-head{padding-bottom:0}
+.about-main>.section{padding-block:0}
+.about-section{padding-bottom:0}
+.about-action{margin-top:1.5rem}
+.group-membership{display:flex;align-items:center;justify-content:space-between;gap:clamp(2rem,6vw,5rem);padding-block:clamp(2rem,4vw,3rem);border-block:1px solid var(--line)}
+.group-membership h2{max-width:13ch;font-size:clamp(2rem,4.3vw,3.4rem);line-height:1.04;letter-spacing:-.04em}
+.group-membership-logo{display:flex;flex:0 1 400px;align-items:center;justify-content:center;padding:1rem;text-decoration:none}
+.group-membership-logo img{width:min(100%,400px);height:auto;object-fit:contain}
 .page-head .hero-square{width:clamp(140px,20vw,280px);top:8%}
 .page-head h1{position:relative;z-index:1;font-size:clamp(2.8rem,8vw,6.5rem);max-width:11em}
 .page-head .lede{position:relative;z-index:1;margin-top:1.5rem}
@@ -211,6 +220,8 @@ textarea{min-height:150px;resize:vertical}
   .co .media,.co-body,.co:nth-of-type(even) .media,.co:nth-of-type(even) .co-body{grid-column:1/-1;grid-row:auto}
   .split .media,.split .copy{grid-column:1/-1}
   .values{grid-template-columns:1fr}
+  .group-membership{flex-direction:column;align-items:flex-start;gap:1.5rem}
+  .group-membership-logo{flex-basis:auto;justify-content:flex-start;width:min(100%,320px);padding:0}
   .foot{grid-template-columns:1fr 1fr}
   .foot>div:first-child{grid-column:1/-1}
 }
