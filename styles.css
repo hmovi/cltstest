@@ -296,3 +296,49 @@ textarea{min-height:150px;resize:vertical}
   .split-rev .copy,.split-rev .media,.split-wide .copy{grid-column:1/-1;grid-row:auto}
   .expert-network .copy,.expert-network .media{grid-column:1/-1;grid-row:auto}
 }
+
+@media (max-width:560px){
+  .home-main{gap:2.5rem}
+  .home-main .hero{padding-top:2rem}
+  .home-main .hero-square{width:150px;right:0;top:-.5rem}
+  .home-main .hero-text h1{font-size:clamp(2.25rem,10vw,2.8rem);line-height:.98;max-width:11ch}
+  .home-main .hero-text .lede{font-size:1.1rem;margin-top:1.25rem}
+  .home-main .hero-text .actions{display:grid;grid-template-columns:1fr;gap:.65rem;margin-top:1.25rem}
+  .home-main .hero-text .actions .btn{width:100%;min-height:48px}
+  .home-main .banner{aspect-ratio:1.2/1;margin-top:1.5rem;border-radius:24px}
+  .home-main .chips{left:.75rem;right:.75rem;bottom:.75rem;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+  .home-main .chips a{flex:0 0 auto;white-space:nowrap;font-size:.85rem;padding:.45em .8em;scroll-snap-align:start}
+  .home-main .home-section>h2{font-size:clamp(1.8rem,8vw,2.35rem);line-height:1.06;max-width:16ch}
+  .home-main .switch{gap:1rem;margin-top:1.25rem}
+  .home-main .tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;overflow:visible;padding:0}
+  .home-main .tab{min-width:0;min-height:3.75rem;padding:.75rem .85rem;border-radius:16px}
+  .home-main .tab strong{font-size:1rem;line-height:1.15}
+  .home-main .panel{border-radius:22px}
+  .home-main .panel .media{aspect-ratio:4/3}
+  .home-main .panel-body{padding:1.25rem}
+  .home-main .panel-body h3{font-size:1.35rem}
+  .home-main .panel-body p{margin:.6rem 0 1rem}
+  .home-main .panel-body .btn,.home-main .global-copy .btn,.home-main .section-action .btn,.home-main .cta .btn{width:100%}
+  .home-main .global-section{border-radius:24px}
+  .home-main .global-copy{padding:1.25rem}
+  .home-main .global-copy h2{font-size:clamp(1.8rem,8vw,2.3rem);line-height:1.06}
+  .home-main .global-copy p{margin:1rem 0 1.25rem}
+  .home-main .bento{gap:.75rem;margin-top:1.25rem}
+  .home-main .tile{min-height:0;gap:1.15rem;padding:1.25rem;border-radius:20px}
+  .home-main .tile .big{font-size:clamp(2.2rem,9vw,3rem);line-height:.98}
+  .home-main .steps{grid-template-columns:1fr;gap:1.25rem;margin-top:1.25rem}
+  .home-main .step{padding-top:.9rem}
+  .home-main .step b{font-size:2.4rem;margin-bottom:.5rem}
+  .home-main .step h3{font-size:1.2rem}
+  .home-main .pills{gap:.4rem;margin-top:1rem}
+  .home-main .pills span{padding:.4em .8em;font-size:.92rem}
+  .home-main .cta{padding:1.5rem;border-radius:24px}
+  .home-main .cta h2{font-size:clamp(1.9rem,8vw,2.4rem);line-height:1.06}
+  .home-main .cta p{margin:1rem 0 1.5rem}
+  .home-main .cta::after{width:150px;right:-55px;bottom:-55px}
+  .home-main+.site-footer{padding-block:2.75rem 2rem}
+  .home-main+.site-footer .foot{gap:1.25rem;padding-bottom:2rem}
+  .home-main+.site-footer .foot>div:not(:first-child){min-width:0}
+  .home-main+.site-footer .company-affiliation{justify-content:flex-start;font-size:.85rem}
+  .home-main+.site-footer .company-affiliation img{width:132px}
+}
