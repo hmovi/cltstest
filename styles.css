@@ -263,11 +263,9 @@ textarea{min-height:150px;resize:vertical}
 .media img[src*="IMG_2997"]{object-position:50% 38%}
 .media img[src*="IMG_6962"]{object-position:50% 42%}
 .media img[src*="adrian-yu"]{object-position:50% 52%}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;list-style:none;padding:0}
 .step{border-top:2px solid var(--ink);padding-top:1.25rem}
-.step b{display:block;font-size:clamp(2.4rem,4vw,3.4rem);font-weight:700;letter-spacing:-.05em;line-height:1;color:var(--sand-deep);margin-bottom:.75rem}
 .step h3{font-size:1.35rem;margin-bottom:.5rem}
-.step p{font-size:1.02rem}
 .pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
 .pills span{background:var(--mist);padding:.5em 1.15em;border-radius:999px;font-weight:500}
 .cta .pills span{background:rgba(254,253,251,.12);color:var(--paper)}
@@ -328,7 +326,6 @@ textarea{min-height:150px;resize:vertical}
   .home-main .tile .big{font-size:clamp(2.2rem,9vw,3rem);line-height:.98}
   .home-main .steps{grid-template-columns:1fr;gap:1.25rem;margin-top:1.25rem}
   .home-main .step{padding-top:.9rem}
-  .home-main .step b{font-size:2.4rem;margin-bottom:.5rem}
   .home-main .step h3{font-size:1.2rem}
   .home-main .pills{gap:.4rem;margin-top:1rem}
   .home-main .pills span{padding:.4em .8em;font-size:.92rem}
