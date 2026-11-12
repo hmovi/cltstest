@@ -62,7 +62,10 @@ h3{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
 .hero-text h1,.hero-text .lede,.hero-text .actions{position:relative;z-index:1}
 .hero-text h1 span{display:block;overflow:hidden}
 .hero-text h1 span i{display:block;font-style:normal;animation:rise .9s var(--ease) both}
-.hero-text h1 span:nth-child(2) i{animation-delay:.12s;color:var(--sand-deep)}
+.hero-text h1 span:nth-child(2) i,.hero-text h1 span:nth-child(3) i{color:var(--sand-deep)}
+.hero-text h1 span:nth-child(2) i{animation-delay:.12s}
+.hero-text h1 span:nth-child(3) i{animation-delay:.24s}
+.hero-text h1 .canadian-red{color:#b42318}
 .hero-text .lede{margin-top:2rem;animation:rise .9s .3s var(--ease) both}
 .hero-text .actions{margin-top:2rem;animation:rise .9s .4s var(--ease) both}
 @keyframes rise{from{transform:translateY(105%);opacity:0}to{transform:none;opacity:1}}
