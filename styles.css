@@ -266,10 +266,12 @@ textarea{min-height:150px;resize:vertical}
 .page-head h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:12em}
 .split-rev .copy{grid-column:1/span 6;grid-row:1}
 .split-rev .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3}
+.expert-network .copy{grid-column:1/span 6;grid-row:1;max-width:36em}
 .expert-network .copy p{margin-top:1.25rem}
 .expert-network .actions{margin-top:1.5rem}
-.expert-network .media{border-radius:32px}
+.expert-network .media{grid-column:8/-1;grid-row:1;aspect-ratio:4/3;border-radius:32px;align-self:center}
 .split-wide .copy{grid-column:1/span 8}
 @media (max-width:900px){
   .split-rev .copy,.split-rev .media,.split-wide .copy{grid-column:1/-1;grid-row:auto}
+  .expert-network .copy,.expert-network .media{grid-column:1/-1;grid-row:auto}
 }
