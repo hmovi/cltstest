@@ -1,0 +1,50 @@
+diff --git a/services.html b/services.html
+index be889d8..94ba1af 100644
+--- a/services.html
++++ b/services.html
+@@ -68,7 +68,7 @@
+       </div>
+     </article>
+     <article class="co lms-co" id="platforms">
+-      <div class="media lms-artwork"><img decoding="async" src="images/team-at-work.jpg" alt="Colleagues collaborating in a creative workspace" loading="lazy"></div>
++      <div class="media lms-artwork"><img decoding="async" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/moodle-vyl04Ss8Y9oieOdTMWAcpRXG2XZhom.png" alt="Moodle logo on a peach and teal background" loading="lazy"></div>
+       <div class="co-body">
+         <span class="tag">Learning technology</span>
+         <h2>LMS, database, and portal</h2>
+@@ -77,7 +77,7 @@
+       </div>
+     </article>
+     <article class="co" id="institutions">
+-      <div class="media"><img decoding="async" src="images/campus-study.jpg" alt="Students studying in a spacious university atrium" loading="lazy"></div>
++      <div class="media"><img decoding="async" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2697-Qw1iASDf3iirIs32jCoPKLd1VD7onk.jpeg" alt="A leafy urban waterfront with a traditional temple, city skyline, and reflections across the water" loading="lazy"></div>
+       <div class="co-body">
+         <span class="tag">International institutions</span>
+         <h2>Education systems adapted to your country</h2>
+diff --git a/styles.css b/styles.css
+index 8b9f8f6..4ae8c33 100644
+--- a/styles.css
++++ b/styles.css
+@@ -402,12 +402,16 @@ textarea{min-height:150px;resize:vertical}
+   .process-cta-section{padding-block:2rem 3rem}
+ }
+ 
+-.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:1.25rem;margin-bottom:clamp(2.5rem,6vw,4.5rem)}
+-.services-grid .co{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#fff;scroll-margin-top:100px}
+-.services-grid .co .media{width:100%;aspect-ratio:16/10;border-radius:0;flex:none}
+-.services-grid .co .co-body{width:100%;padding:clamp(1.25rem,2.2vw,2rem)}
+-.services-grid .co-body h2{font-size:clamp(1.7rem,2.4vw,2.35rem);line-height:1.08}
++.services-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;gap:1.25rem;margin-bottom:clamp(2.5rem,6vw,4.5rem)}
++.services-grid .co{grid-column:span 2;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#fff;scroll-margin-top:100px}
++.services-grid .co:nth-child(n+4){grid-column:span 3}
++.services-grid .co .media{width:100%;aspect-ratio:4/3;border-radius:0;flex:none}
++.services-grid .co .co-body{width:100%;flex:1;padding:clamp(1.25rem,2.2vw,2rem)}
++.services-grid .co-body h2{font-size:clamp(1.5rem,2vw,2.1rem);line-height:1.1}
+ .services-grid .co-body p{margin:.75rem 0 1rem}
+ .services-grid .co-body li{padding:.6rem 0;font-size:1rem}
+-.services-grid .co:last-child{grid-column:1/-1;width:calc((100% - 1.25rem)/2);justify-self:center}
+-@media(max-width:760px){.services-grid{grid-template-columns:1fr;gap:1rem}.services-grid .co{border-radius:24px}.services-grid .co:last-child{grid-column:auto;width:100%}.services-grid .co .co-body{padding:1.35rem}.services-grid .co-body h2{font-size:clamp(1.8rem,6vw,2.3rem)}}
++.services-grid .co:nth-child(n+4) .media{aspect-ratio:16/9}
++.services-grid .lms-co .lms-artwork{aspect-ratio:16/9;background:#ffe0c4}
++.services-grid .lms-co .lms-artwork img{object-fit:contain}
++@media(max-width:1000px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-grid .co,.services-grid .co:nth-child(n+4){grid-column:span 1}.services-grid .co:last-child{grid-column:1/-1}.services-grid .co .media,.services-grid .co:nth-child(n+4) .media,.services-grid .lms-co .lms-artwork{aspect-ratio:16/10}}
++@media(max-width:760px){.services-grid{grid-template-columns:1fr;gap:1rem}.services-grid .co,.services-grid .co:last-child{grid-column:auto;border-radius:24px}.services-grid .co .co-body{padding:1.35rem}.services-grid .co-body h2{font-size:clamp(1.8rem,6vw,2.3rem)}}
