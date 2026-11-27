@@ -47,7 +47,7 @@ if (form) {
     const subject = encodeURIComponent(`Enquiry: ${d.get('interest')} (${d.get('name')})`);
     const body = encodeURIComponent(`${d.get('message')}\n\n${d.get('name')}\n${d.get('organization') || ''}\n${d.get('email')}`);
     document.querySelector('.form-note').textContent = 'Opening your email app with your enquiry ready to send.';
-    window.location.href = `mailto:info@ctlservices.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:team@ctlservices.ca?subject=${subject}&body=${body}`;
   });
 }
 
